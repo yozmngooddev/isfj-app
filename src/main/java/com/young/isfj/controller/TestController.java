@@ -10,4 +10,10 @@ public class TestController {
     public String test() {
         return "Hello World!";
     }
+
+
+    @GetMapping("/healthcheck")
+    public String healthcheck() {
+        return "OKOKOK";
+    }
 }
